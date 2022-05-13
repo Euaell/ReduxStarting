@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Loading from './component/loading';
+import PlaceHolder from './component/placeholder';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+
+		<PlaceHolder />
+
+		<Loading />
+		{/* <div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div> */}
+
+		{/* {(() => {
+			const options = [];
+
+			for (let i = 0; i < 5; i++) {
+				options.push(<PlaceHolder />)
+			}
+			return options;
+		})()} */}
+		</>
+	);
 }
 
 export default App;
